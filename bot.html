@@ -2,10 +2,37 @@
 <html>
 <head>
 	<title>Bot</title>
+<style type="text/css">
+	.myIframe {
+     position: relative;
+     padding-bottom: 65.25%;
+     padding-top: 30px;
+     height: 1000px;
+     overflow: auto; 
+     -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+     border: solid black 1px;
+} 
+.myIframe iframe {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+iframe{
+width: 100%;
+height: 100%; /*this can be anything you wish, to show, as default size*/
+}
+body {
+         height: 100%;
+      }
+
+</style>
 </head>
 <body>
-
-	<iframe src='https://webchat.botframework.com/embed/lalitakradadiya-boat-bot?s=am4NF3eiL98.DvyHfYilPHoHYljdq1xKHzUhHcRuccVM9CHIKdy6178' style='height:100%; width: 100%;  '></iframe>
-
+<div class="myIframe">
+	<iframe   allowfullscreen src='https://webchat.botframework.com/embed/lalitakradadiya-boat-bot?s=am4NF3eiL98.DvyHfYilPHoHYljdq1xKHzUhHcRuccVM9CHIKdy6178'  ></iframe>
+</div>
 </body>
 </html>
